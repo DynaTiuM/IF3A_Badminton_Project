@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "font-1";
+    src : url("../assets/Urbanist-Regular.ttf");
+}
+
+body{
+    font-family: "font-1", sans-serif;
+    background: url("../assets/pexels-eric-anada-3660204.jpg") center/cover;
+}
+
+h1 {
+    font-size :4rem;
+    color: white;
+    text-align: center;
+    background: rgb(0, 121, 173);
+    margin-top:20px;
+    animation: apparition_top 1.2s ease-out;
+}
+
+TD{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 86, 122,0.75);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.non{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(255, 30, 30, 0.4);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.Liste{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 86, 122,0.75);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.objets{
+    animation: apparition_left 2s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 48, 66, 0.75);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.nb{
+    border-radius: 10px;
+    background-color: rgba(28, 195, 255, 0.1);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.confirmer{
+    animation: apparition_left 2s ease-out;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 173, 95,0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 350px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+
+@keyframes apparition_top {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes apparition_left {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left_2 {
+    from {
+        opacity: 0;
+        transform: translateX(-1300px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.retour{
+    animation: apparition_left_2 2s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 1100px;
+
+}

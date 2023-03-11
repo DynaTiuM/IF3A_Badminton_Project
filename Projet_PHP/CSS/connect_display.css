@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "font-1";
+    src : url("../assets/Urbanist-Regular.ttf");
+}
+
+body{
+    font-family: "font-1", sans-serif;
+    background: url("../assets/pexels-leo-zhao-5767580.jpg") center/cover;
+    height: 90vh;
+}
+
+
+h1 {
+    animation: apparition_top 1.2s ease-out;
+    font-size :4rem;
+    color: white;
+    text-align: center;
+    background: coral;
+    margin-top:20px;
+}
+
+td {
+    animation: apparition_left_donnees 1.2s ease-out;
+    animation-duration: 2.1s;
+    background: rgba(255,127,80,0.6);
+    border-radius: 10px;
+    border: 2px double white;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 200px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+a{
+    border-radius: 10px;
+    background-color: rgba(30,145,255,0.2);
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 230px;
+    cursor: pointer;
+    margin: 30px;
+    animation: apparition_left 1.2s ease-out;
+    animation-duration: 4s;
+}
+
+.valider{
+    background: bisque;
+    border-radius: 10px;
+    border: 2px double white;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 200px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.donnees{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border : 0;
+    color: #ffedd8;
+    text-align: center;
+
+    font-size: 1.2rem;
+    padding: 1px;
+    width: 200px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.donnees_valider{
+    background: bisque;
+    border: 0;
+    color: coral;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 500px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+@keyframes apparition_top {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left_donnees {
+    from {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left_mauvais {
+    from {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to {
+        opacity: 1;
+    }
+}

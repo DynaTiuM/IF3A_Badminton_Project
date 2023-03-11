@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "font-1";
+    src : url("../assets/Urbanist-Regular.ttf");
+}
+
+body{
+    font-family: "font-1", sans-serif;
+    background: url("../assets/pexels-leo-zhao-5767580.jpg") center/cover;
+    height: 90vh;
+}
+
+
+h1 {
+    font-size :4rem;
+    color: white;
+    text-align: center;
+    background: coral;
+    margin-top:20px;
+    animation: apparition_top 1.2s ease-out;
+}
+
+
+h2 {
+    font-size : 2rem;
+    color: white;
+    background: rgba(255,127,80,0.3);
+    padding:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: apparition_left 1.2s ease-out;
+    animation-duration: 2s;
+}
+
+h3{
+    animation: apparition_left 1.2s ease-out;
+    animation-duration: 2.1s;
+    font-size : 1.5rem;
+    color: saddlebrown;
+    background: rgba(255,228,196,0.5);
+    padding:12px;
+}
+
+td{
+    animation: apparition_left_donnees 1.2s ease-out;
+    animation-duration: 2.1s;
+    background: rgba(255,127,80,0.6);
+    border-radius: 10px;
+    border: 2px double white;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 200px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.valider{
+    background: bisque;
+    border-radius: 10px;
+    border: 2px double white;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 200px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.donnees{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border : 0px;
+    color: #ffedd8;
+    text-align: center;
+
+    font-size: 1.2rem;
+    padding: 1px;
+    width: 200px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.donnees_valider{
+    background: bisque;
+    border: 0px;
+    color: coral;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 500px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+
+
+
+@keyframes apparition_top {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left_donnees {
+    from {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left_2 {
+    from {
+        opacity: 0;
+        transform: translateX(-1300px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.retour{
+    animation: apparition_left_2 2s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 1100px;
+}

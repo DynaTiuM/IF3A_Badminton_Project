@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "font-1";
+    src : url("../assets/Urbanist-Regular.ttf");
+}
+
+body{
+    font-family: "font-1", sans-serif;
+    background: url("../assets/pexels-eric-anada-3660204.jpg") center/cover;
+    height: 2vh;
+}
+h1 {
+    font-size :4rem;
+    color: white;
+    text-align: center;
+    background: rgb(0, 121, 173);
+    margin-top:20px;
+    animation: apparition_top 1.2s ease-out;
+}
+
+TD{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 86, 122,0.75);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.text{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(0, 45, 65, 0.75);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.valid{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 173, 95, 0.64);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+h5{
+    font-size : 1.2rem;
+    color: white;
+    background: rgba(192, 0, 67, 0.36);
+    padding:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: apparition_left 1.2s ease-out;
+    animation-duration: 1.4s;
+}
+
+
+h2 {
+    font-size : 2rem;
+    color: white;
+    background: rgba(192, 0, 67, 0.5);
+    padding:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: apparition_left 1.2s ease-out;
+    animation-duration: 1.4s;
+}
+
+h3{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    background-color: rgba(192, 0, 67, 0.4);
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+h4{
+    animation: apparition_left 1.7s ease-out;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 360px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+p{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 86, 122,0.75);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.donnees{
+    background-color: rgba(255, 131, 30, 0);
+    border: 0px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 340px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.donnees_entrer{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border : 0px;
+    color: #ffedd8;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 300px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.donnees_cliquer{
+    animation: apparition_left 1.7s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(192, 0, 67, 0.4);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+@keyframes apparition_top {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_left {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes apparition_left_2 {
+    from {
+        opacity: 0;
+        transform: translateX(-1300px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.retour{
+    animation: apparition_left_2 2s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 1100px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "font-1";
+    src : url("../assets/Urbanist-Regular.ttf");
+}
+
+body{
+    font-family: "font-1", sans-serif;
+    background: url("../assets/pexels-photo-8007418.jpeg") center/cover;
+}
+
+h1 {
+    font-size :4rem;
+    color: white;
+    text-align: center;
+    background: coral;
+    margin-top:20px;
+    animation: apparition_top 1.2s ease-out;
+}
+
+h2 {
+    font-size : 2rem;
+    color: white;
+    background: rgba(255,127,80,0.3);
+    padding:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: apparition_left 1.2s ease-out;
+    animation-duration: 2s;
+}
+
+@keyframes apparition_left_2 {
+    from {
+        opacity: 0;
+        transform: translateX(-1300px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_top {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.retour{
+    animation: apparition_left_2 2s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 350px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 1100px;
+}
+form{
+    animation: apparition_left 2s ease-out;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(255, 30, 30, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 450px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.valid{
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(0, 173, 95,0.5);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 400px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.don{
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px double white;
+    background-color: rgba(255, 127, 80,0.5);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 280px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+
+@keyframes apparition_left {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+    }
+}
